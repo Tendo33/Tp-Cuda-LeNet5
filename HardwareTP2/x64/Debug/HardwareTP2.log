@@ -1,0 +1,14 @@
+﻿  Compiling CUDA source file test.cu...
+  Compiling CUDA source file CNN.cu...
+  
+  C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\CNN.cu.obj "C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2\CNN.cu" 
+  
+  C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\test.cu.obj "C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2\test.cu" 
+C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2\CNN.cu(19): warning #2464-D: conversion from a string literal to "char *" is deprecated
+  
+  test.cu
+C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2\CNN.cu(19): warning #2464-D: conversion from a string literal to "char *" is deprecated
+  
+  CNN.cu
+     Creating library C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2\x64\Debug\HardwareTP2.lib and object C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2\x64\Debug\HardwareTP2.exp
+  HardwareTP2.vcxproj -> C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\HardwareTP2\x64\Debug\HardwareTP2.exe

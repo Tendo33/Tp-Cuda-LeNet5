@@ -1,0 +1,3 @@
+﻿tp1.cu.obj : error LNK2005: main already defined in CNN.cu.obj
+     Creating library C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\TP1\x64\Debug\TP1.lib and object C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\TP1\x64\Debug\TP1.exp
+C:\Users\sjf19\jupyter projects\ENSEA\Hardware\TP\TP1\x64\Debug\TP1.exe : fatal error LNK1169: one or more multiply defined symbols found

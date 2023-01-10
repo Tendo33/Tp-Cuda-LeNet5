@@ -27,6 +27,16 @@ Time_Mult_CPU: 106.648003
 Time_ADD_GPU:0.003000
 Time_Mult_GPU:0.003000
 
+De cela on peut en déduire une accélération pour l’addition comme suit : 
+
+Accélération = Temps d'exécution sans mécanisme d’accélération / Temps d'exécution avec mécanisme d’accélération 
+
+Acc = Time_ADD_CPU/Time_ADD_GPU = 0.012000/0.003000 = 4
+
+Acc = Time_Mult_CPU/Time_Mult_GPU = 106.648003/0.003000 = 35 549
+
+Le cas de la multiplication présente une très forte accélération par rapport à l'addition, cela est dû au fait que la complexité de calcule est plus élevée pour cette tâche donc il y a un nombre de tâche parallélisable conséquent( cf. Amdahl’s Law : Accélération par rapport au nombre de threads exécutant la tâche).
+
 
 
 ## Partie 2

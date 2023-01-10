@@ -42,12 +42,16 @@ Le cas de la multiplication présente une très forte accélération par rapport
 
 
 ## Partie 2
+Nous avons implémenté la fonction de convolution 2D, la fonction maxpooling, et apres nous avons ensuite testé en utilisant la couche ci-dessous
 
 Layer 1- Couche d'entrée de taille 32x32 correspondant à la taille des images de la base de donnée MNIST.
 
 Layer 2- Convolution avec 6 noyaux de convolution de taille 5x5. La taille résultantes est donc de 6x28x28.
 
 Layer 3- Sous-échantillonnage d'un facteur 2. La taille résultantes des données est donc de 6x14x14.
+
+ Pour cela on à modifier les valeurs de nos matrices raw_data et kernel afin qu'elles comprennent uniquement la valeurs 1 ainsi lors de la convolution le résultat obtenu est 6 matrices affichant la valeur 25, et la taille de sortie est également conforme à la théoriece qui confirme le bon fonctionnement de notre fonction de convolution. 
+
 
 ## Partie 3
 

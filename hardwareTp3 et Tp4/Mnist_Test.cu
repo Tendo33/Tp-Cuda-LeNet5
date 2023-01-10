@@ -273,6 +273,7 @@ int main(int argc, char* argv[]) {
 	 //Layer 2: Première conv2D (6 kernels de taille 5x5 => matrice de taille 6x28x28)
 	cudaConv2D << < gridDim, blockDim >> > (d_raw_data, d_C1_kernel, d_C1_data, 32, 32, 5, 6, 28, 28);
 	cudaDeviceSynchronize();
+
 	// Activation tanh
 	activation_tanh << <28, 28 >> > (d_C1_data, 28, 28, 6, d_C1_data_activated);
 	cudaDeviceSynchronize();

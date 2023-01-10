@@ -20,6 +20,14 @@ Pour la multiplication de deux matrice de taille m x n et n x p la complexité d
 Multiplication  de matrice GPU
 La complexité de calcule est la même, avec les processus executé en parallèle donc ce sera significativement plus rapide
 
+pour une matrice 3000*3000
+Nos tests ont été effectués sur une matrice 3000x3000. On relève les temps de calcul suivant : 
+Time_ADD_CPU: 0.012000
+Time_Mult_CPU: 106.648003
+Time_ADD_GPU:0.003000
+Time_Mult_GPU:0.003000
+
+
 
 ## Partie 2
 

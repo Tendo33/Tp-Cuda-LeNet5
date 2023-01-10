@@ -50,7 +50,12 @@ Layer 2- Convolution avec 6 noyaux de convolution de taille 5x5. La taille résu
 
 Layer 3- Sous-échantillonnage d'un facteur 2. La taille résultantes des données est donc de 6x14x14.
 
- Pour cela on à modifier les valeurs de nos matrices raw_data et kernel afin qu'elles comprennent uniquement la valeurs 1 ainsi lors de la convolution le résultat obtenu est 6 matrices affichant la valeur 25, et la taille de sortie est également conforme à la théoriece qui confirme le bon fonctionnement de notre fonction de convolution. 
+ Afin de tester la convolution  on à modifier les valeurs de nos matrices raw_data et kernel afin qu'elles comprennent uniquement la valeurs 1 ainsi lors de la convolution le résultat obtenu est 6 matrices affichant la valeur 25, ce qui confirme le bon fonctionnement de notre fonction de convolution.
+ 
+ Pour la fonction de sous échantillonnage(Maxpooling), il nous suffit de vérifier la taille de sortie de notre matrice 6x14x14 ainsi que les valeurs en son sain qui doivent toutes être 25.
+
+ De plus il est important d’ajouter de la non-linéarité a notre CNN dans ce but on implémente la fonction d’activation tan qui est souvent utilisée dans les réseaux de neurones pour la reconnaissance d'images. Elle prend en entrée un nombre réel (M) et renvoie un autre nombre réel qui est compris entre -1 et 1.
+
 
 
 ## Partie 3

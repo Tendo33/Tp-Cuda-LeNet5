@@ -51,5 +51,21 @@ Layer 3- Sous-échantillonnage d'un facteur 2. La taille résultantes des donné
 
 ## Partie 3
 
-Dans cette partie nous allons créer un réseau LeNet5 sur tensorflow puis l'entrainer sur le dataset MNIST. Une fois le modèle entraîné,nous enregistrons les poids de chaque couche dans un fichier .bin.
+Nous avons implémenté LeNet-5 en CUDA
+
+Couche de convolution 1: 6 filtres de convolution de taille 5x5, avec une stride de 1, avec une fonction d'activation de type Tanh.
+
+Couche de sous-échantillonnage 1: pooling de taille 2x2 avec une stride de 2 (également appelé sous-échantillonnage par moyenne).
+
+Couche de convolution 2: 16 filtres de convolution de taille 5x5, avec une stride de 1, avec une fonction d'activation de type Tanh.
+
+Couche de sous-échantillonnage 2: pooling de taille 2x2 avec une stride de 2.
+
+Couche de reconnaissance: 120 neurones fully-connected (ou pleinement connectés) avec une fonction d'activation de type Tanh.
+
+Couche de reconnaissance 2: 84 neurones fully-connected avec une fonction d'activation de type Tanh.
+
+Couche de sortie: 10 neurones fully-connected avec une fonction d'activation de softmax pour l'identification.
+
+Et apres nous avons créer un réseau LeNet5 sur tensorflow puis l'entrainer sur le dataset MNIST. Une fois le modèle entraîné,nous enregistrons les poids de chaque couche dans un fichier .bin.
 
